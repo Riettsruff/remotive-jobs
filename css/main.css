@@ -1,0 +1,320 @@
+html {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", font-family;
+  color: #555;
+}
+
+a,
+a:active,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header {
+  background-color: #6800fa;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 145px 20px 20px;
+  border-bottom: 4px solid #ffb05b;
+}
+
+#header .main-title {
+  font-size: 3.5em;
+  font-weight: 900;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  color: #fac486;
+}
+
+#header .greeting-text {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+#header .greeting-text:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#header .bottom-of-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header .category-area {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 767px;
+}
+
+#header .category-area .single-category {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  padding: 8px 18px;
+  border-radius: 18px;
+  font-size: 0.9em;
+}
+
+#header .category-area .single-category a {
+  display: block;
+  width: 100%;
+}
+
+#header .category-area .single-category.active {
+  background-color: #fff;
+  color: #6800fa;
+}
+
+#header .search-area {
+  align-self: flex-end;
+  width: 330px;
+}
+
+#header .search-area form {
+  width: 100%;
+  display: flex;
+  font-size: 0.9em;
+}
+
+#header .search-area form input {
+  font-size: inherit;
+}
+
+#header .search-area .submit-button {
+  margin-left: 6px;
+  border: 0;
+  outline: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #6800fa;
+}
+
+#main-content {
+  padding: 20px;
+}
+
+#main-content .main-content-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#main-content .main-content-header .category-content-title {
+  font-size: 1.5em;
+  color: #6800fa;
+  position: relative;
+}
+
+#main-content .main-content-header .category-content-title:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #6800fa;
+  border-radius: 15px;
+}
+
+#main-content .main-content-header .search-content-title {
+  color: #6800fa;
+  font-size: 1.15em;
+}
+
+#main-content
+  .main-content-header
+  .search-content-title
+  .search-content-title-value {
+  font-weight: 600;
+}
+
+#main-content .main-content-body .single-content-wrapper {
+  margin-bottom: 45px;
+}
+
+#main-content .main-content-body .single-content {
+  box-shadow: 0 2px 5px 2px rgb(64 60 67 / 15%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#main-content .main-content-body .single-content .publication-date {
+  text-align: right;
+  margin-top: 6px;
+  margin-right: 15px;
+  margin-bottom: 6px;
+  font-size: 0.85em;
+}
+
+#main-content .main-content-body .single-content .title {
+  color: #fcaa53;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.25em;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+}
+
+#main-content .main-content-body .single-content .category-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+
+#main-content .main-content-body .single-content .category {
+  font-size: 0.735em;
+  background-color: #fff;
+  border: 1px solid rgba(255, 176, 91, 0.7);
+  display: inline-block;
+  padding: 1px 5px;
+  color: #777;
+  letter-spacing: 0.02em;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+#main-content .main-content-body .single-content .company-name {
+  line-height: 1.25em;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#main-content .main-content-body .single-content .view-detail-button {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fff;
+  color: #6800fa;
+  border: 1px solid rgba(67, 47, 94, 0.25);
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+#main-content .main-content-body .single-content .get-job-link-button {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 6px;
+  background-color: rgba(72, 37, 121, 0.675);
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+#main-content .main-content-body .single-content .get-job-link-button a {
+  display: block;
+  padding: 5px 10px 6px;
+}
+
+#detail-main-content {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: 0.35s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#detail-main-content.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#detail-main-content .detail-box {
+  width: 820px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  margin: 50px auto;
+  height: fit-content;
+}
+
+#detail-main-content .close-button {
+  position: absolute;
+  top: -5px;
+  right: 15px;
+  font-size: 3em;
+  font-weight: 600;
+  cursor: pointer;
+  color: #777;
+}
+
+#detail-main-content .job-title {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: #fcaa53;
+  line-height: 1.4em;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+#detail-main-content .company-name {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+#detail-main-content .info-content {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#detail-main-content .info-content p {
+  margin-bottom: 0;
+}
+
+#detail-main-content .info-content > p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+#detail-main-content .info-content .job-type-label,
+#detail-main-content .info-content .hiring-from-label,
+#detail-main-content .info-content .salary-label {
+  font-weight: 600;
+}
+
+#detail-main-content .info-content .job-type-label:after,
+#detail-main-content .info-content .hiring-from-label:after,
+#detail-main-content .info-content .salary-label:after {
+  content: ": ";
+  margin-right: 4px;
+}
+
+#detail-main-content .description-content * {
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+}
